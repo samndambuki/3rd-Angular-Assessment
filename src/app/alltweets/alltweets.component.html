@@ -1,0 +1,4 @@
+<p>alltweets works!</p>
+<div *ngFor="let tweet of tweets$ | async">
+    <app-singletweet [tweet]="tweet"></app-singletweet>
+  </div>

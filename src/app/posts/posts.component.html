@@ -1,0 +1,7 @@
+<p>posts works!</p>
+<h2>Posts</h2>
+<ul>
+  <li *ngFor="let post of posts$ | async" (click)="selectPost(post.id)">
+    {{ post.title }}
+  </li>
+</ul>
